@@ -1,0 +1,153 @@
+/* .container-style {
+  height: 100%;
+  position: relative;
+}
+
+.description {
+  width: 600px;
+  position: absolute;
+  z-index: 999;
+  color: aliceblue;
+  top: 15%;
+  left: 5%;
+}
+
+.description h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.description p {
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+.carousel-boult {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.carousel-boult span {
+  width: 45px;
+  height: 12px;
+  background-color: rgb(179, 178, 176);
+  margin-left: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 2px 2px rgba(72, 72, 72, 0.338);
+}
+
+.transparent-background {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 0, 0, 0),
+    rgba(0, 255, 238, 0.162)
+  );
+} */
+/* body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+} */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: #fff;
+  letter-spacing: 1rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content p {
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 1rem 3rem 2rem 100px;
+  text-align: center;
+}
+
+.content a {
+  text-decoration: none;
+  background: #fff;
+  color: #000;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+}
+a:hover {
+  background: #1e9bff;
+  letter-spacing: 0.25rem;
+  box-shadow: 0 0 35px #1e9bff;
+}
+/* /* a:before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+} /* */
+
+@media screen and(max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .content h1 {
+    padding: 10px 20px;
+  }
+
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+  }
+  .content .btn {
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+}
+
+
+
+
