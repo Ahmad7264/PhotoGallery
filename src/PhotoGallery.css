@@ -1,10 +1,7 @@
 body {
   background: #403a3e; /* fallback for old browsers */
-background: -webkit-linear-gradient(
-    to right,
-    #be5869,
-    #403a3e
-  ); background-repeat: no-repeat;  /*  Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #be5869, #403a3e);
+  background-repeat: no-repeat; /*  Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #be5869, #403a3e);
   background-repeat: repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -19,6 +16,7 @@ background: -webkit-linear-gradient(
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 1.5rem;
+  text-shadow: 2px 2px 8px #000;
 }
 
 .photo-gallery p {
@@ -45,6 +43,7 @@ background: -webkit-linear-gradient(
   border-radius: 10px;
   padding: 30px;
   transition: 0.9s ease;
+  text-shadow: 2px 2px 8px #000;
 }
 
 .content-text p:hover {
@@ -62,6 +61,7 @@ background: -webkit-linear-gradient(
   border-radius: 10px;
   padding: 30px;
   transition: 0.9s ease;
+  text-shadow: 2px 2px 8px #000;
 }
 
 .content-text h2:hover {
@@ -75,7 +75,6 @@ background: -webkit-linear-gradient(
   display: flex;
   justify-content: space-between;
   z-index: 99;
-
 }
 
 .photo img {
@@ -96,10 +95,30 @@ background: -webkit-linear-gradient(
   position: absolute;
   top: -12%;
   right: 0;
-  
-  
 }
 .photo img:nth-child(2):hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 35px #1e9bff;
+}
+.photo-western {
+  position: relative;
+  width: 52%;
+  display: flex;
+  justify-content: end;
+  z-index: 99;
+}
+
+.photo-western img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin-right: 0;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.909);
+  transition: 0.8s ease;
+  border: 1px solid rgba(255, 255, 255, 0.276);
+}
+.photo-western img:hover {
   transform: scale(1.1);
   box-shadow: 0 0 35px #1e9bff;
 }
@@ -140,7 +159,7 @@ background: -webkit-linear-gradient(
   .content-text {
     width: 85%;
   }
-  .content-text h2{
+  .content-text h2 {
     margin-right: 2.8rem;
   }
   .photo {
@@ -151,9 +170,14 @@ background: -webkit-linear-gradient(
   .photo img {
     height: 250px;
   }
+  .photo-western {
+    width: 85%;
+    margin: 1.8rem 0;
+    margin-right: 3rem;
+  }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 455px) {
   html,
   body {
     width: 100%;
@@ -190,8 +214,20 @@ background: -webkit-linear-gradient(
 
   .content-text {
     width: 90%;
-
   }
+  .content-text h2 {
+    font-size: 1rem;
+    margin-right: 20px;
+    text-align: center;
+    margin-left: -10px;
+  }
+  .content-text p {
+    font-size: 1.2rem;
+    margin-right: 20px;
+    text-align: center;
+    margin-left: -10px;
+  }
+
   .photo {
     width: 100%;
     margin: 1.8rem 0;
@@ -199,6 +235,12 @@ background: -webkit-linear-gradient(
   }
   .photo img {
     height: 250px;
+  }
+
+  .photo-western {
+    width: 100%;
+    margin: 1.8rem 0;
+    margin-right: 2rem;
   }
 }
 
@@ -240,15 +282,14 @@ background: -webkit-linear-gradient(
 
   .content-text {
     width: 90%;
-
   }
-  
-.content-text h2 {
-  font-size: 1rem;
-}
-.content-text p{
-  font-size: 1.1rem;
-}
+
+  .content-text h2 {
+    font-size: 1rem;
+  }
+  .content-text p {
+    font-size: 1.1rem;
+  }
   .photo {
     width: 100%;
     margin: 1.8rem 0;
@@ -258,5 +299,3 @@ background: -webkit-linear-gradient(
     height: 250px;
   }
 }
-
-
